@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+* {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Gothic A1";
+}
+
+.bootingObject {
+  visibility: hidden;
+}
+
+body {
+  background-color: black;
+}
+body .bigWindowIcon {
+  display: none;
+  width: 30vh;
+  height: 30vh;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .bootingWindow {
+  cursor: pointer;
+  width: 30vh;
+  height: 30vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: filter 3s;
+  filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(358deg) brightness(106%) contrast(103%);
+}
+body .bootingWindow:hover {
+  filter: invert(9%) sepia(97%) saturate(6404%) hue-rotate(245deg) brightness(98%) contrast(147%);
+}
+body .bootingWindow:active {
+  filter: invert(99%) sepia(0%) saturate(7500%) hue-rotate(358deg) brightness(106%) contrast(103%);
+}
+body .loadingCircle {
+  display: none;
+  font-size: 20vh;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10vh;
+  margin-left: -10vh;
+}
+body h1 {
+  text-align: center;
+  font-size: 5vh;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: Regular;
+}
+body h2 {
+  text-align: center;
+  font-size: 5vh;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: Regular;
+}
+body h3 {
+  text-align: center;
+  font-size: 5vh;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: Regular;
+}
+body .flowUpAnimation {
+  animation: fadeUp 6s forwards;
+  top: 80%;
+  opacity: 0;
+}
+@keyframes fadeUp {
+  0% {
+    top: 80%;
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 50%;
+  }
+}
+
+body,
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  user-select: none;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../img/img19_1920x1200.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .mainWindow {
+  width: 100%;
+  height: 95vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+main .mainWindow .iconDefault {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0.5208vw;
+  width: 4.1666vw;
+  height: 4.1666vw;
+  transition: background-color 0.3s;
+  margin-bottom: 1.0416vw;
+  text-align: center;
+}
+main .mainWindow .iconDefault img {
+  width: 90%;
+}
+main .mainWindow .iconDefault p {
+  font-size: 0.5208vw;
+  color: white;
+}
+main .mainWindow .iconDefault:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+main .mainWindow .clickObject {
+  display: none;
+  width: 52.0833vw;
+  height: 31.25vw;
+  background-color: #191919;
+  position: absolute;
+  border: 2px solid #2f2f3e;
+  border-radius: 10px;
+  top: 10vh;
+  left: 15vh;
+  overflow: hidden;
+  z-index: 100;
+}
+main .mainWindow .clickObject .modalHandle {
+  width: 100%;
+  height: 6.6666%;
+  background-color: #000d15;
+  box-sizing: border-box;
+  padding-left: 0.8%;
+  overflow: hidden;
+}
+main .mainWindow .clickObject .modalHandle .modalBar {
+  height: 75%;
+  width: 23.5%;
+  margin-top: 1%;
+  float: left;
+  background-color: #1c2124;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .mainWindow .clickObject .modalHandle .modalBar .titleIntroduceSelf {
+  color: white;
+  line-height: 1.5625vw;
+  margin-left: 5%;
+  font-size: 1vw;
+}
+main .mainWindow .clickObject .modalHandle .modalBar .modalBarIcon {
+  float: right;
+  color: white;
+  font-size: 0.78125vw;
+  margin-right: 3%;
+  line-height: 1.5625vw;
+  width: 10%;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+main .mainWindow .clickObject .modalHandle .modalBar .modalBarIcon:hover {
+  background-color: #292e31;
+}
+main .mainWindow .clickObject .modalHandle .closeModal {
+  text-align: center;
+  width: 5%;
+  height: 100%;
+  line-height: 2.0833vw;
+  color: white;
+  font-size: 1.0416vw;
+  float: right;
+  cursor: pointer;
+}
+main .mainWindow .clickObject .modalHandle .closeModal:hover {
+  background-color: red;
+}
+main .mainWindow .clickObject .modalHandle .fullScreenModal {
+  text-align: center;
+  width: 5%;
+  height: 100%;
+  line-height: 2.0833vw;
+  color: white;
+  font-size: 1.0416vw;
+  float: right;
+  cursor: pointer;
+}
+main .mainWindow .clickObject .modalHandle .fullScreenModal:hover {
+  background-color: #0f1b24;
+}
+main .mainWindow .clickObject .modalHandle .minifyModal {
+  text-align: center;
+  width: 5%;
+  height: 100%;
+  line-height: 2.0833vw;
+  color: white;
+  font-size: 1.0416vw;
+  float: right;
+  cursor: pointer;
+  cursor: auto;
+}
+main .mainWindow .clickObject .modalHandle .minifyModal:hover {
+  background-color: #0f1b24;
+}
+main .mainWindow .clickObject .modalToolBar {
+  width: 100%;
+  height: 10.8333%;
+  background-color: #1a2126;
+  box-sizing: border-box;
+  padding-left: 1.5%;
+}
+main .mainWindow .clickObject .modalToolBar .modalToolBarNew {
+  color: white;
+  font-size: 1.3020833333vw;
+  line-height: 3.3854166667vw;
+  float: left;
+}
+main .mainWindow .clickObject .modalToolBar .deg90 {
+  width: 5%;
+  transform: rotate(90deg);
+  border: 1px solid white;
+}
+main .mainWindow .clickObject .modalInterface {
+  height: 8.3333333333%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 1%;
+}
+main .mainWindow .clickObject .modalInterface .modalInterfaceIcon {
+  cursor: auto;
+  margin-left: 0.2604166667vw;
+  width: 1.5625vw;
+  height: 1.5625vw;
+  font-size: 1.5625vw;
+  line-height: 1.5104166667vw;
+  color: white;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  float: left;
+}
+main .mainWindow .clickObject .modalInterface .modalInterfaceIcon:hover {
+  background-color: #434343;
+}
+main .mainWindow .clickObject .modalInterface .reverseObject {
+  transform: scaleX(-1);
+}
+main .mainWindow .clickObject .modalInterface .modalInterfaceDirLocate {
+  margin-left: 0.5208333333vw;
+  padding-left: 0.5208333333vw;
+  height: 1.5625vw;
+  width: 46.875vw;
+  float: left;
+  font-size: 0.8333333333vw;
+  line-height: 1.5625vw;
+  outline: none;
+  border: none;
+}
+main .mainWindow .clickObject .modalFileSection {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+main .mainWindow .clickObject .modalFileSection .iconDefault {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0.5208vw;
+  width: 4.1666vw;
+  height: 4.1666vw;
+  transition: background-color 0.3s;
+  margin-bottom: 1.0416vw;
+  text-align: center;
+}
+main .mainWindow .clickObject .modalFileSection .iconDefault img {
+  width: 90%;
+}
+main .mainWindow .clickObject .modalFileSection .iconDefault p {
+  font-size: 0.5208vw;
+  color: white;
+}
+main .mainWindow .clickObject .modalFileSection .iconDefault:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+main .mainWindow .clickObject .modalFileSection .notepadIcon img {
+  width: 75%;
+  height: 95%;
+}
+main .mainWindow .fullScreenDisplay {
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+main nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  padding: 0.5vh 2vh;
+  background-color: rgba(20, 43, 59, 0.95);
+  box-sizing: border-box;
+}
+main nav .windowIcon {
+  height: 4vh;
+  display: inline-block;
+  margin-left: 0;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+main nav .windowIcon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+main nav .searchIcon {
+  height: 4vh;
+  display: inline-block;
+  margin-left: 1vh;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5vh;
+  cursor: pointer;
+  cursor: auto;
+}
+main nav .searchIcon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+main nav .taskViewIcon {
+  height: 4vh;
+  display: inline-block;
+  margin-left: 1vh;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5vh;
+  cursor: pointer;
+  cursor: auto;
+}
+main nav .taskViewIcon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+main nav .folderIcon {
+  height: 4vh;
+  display: inline-block;
+  margin-left: 1vh;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+main nav .folderIcon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+main nav .chromeIcon {
+  height: 4vh;
+  display: inline-block;
+  margin-left: 1vh;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+main nav .chromeIcon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+main nav .iconDefault {
+  height: 4vh;
+  display: inline-block;
+  margin-left: 1vh;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+main nav .iconDefault:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+main nav .timeObject {
+  width: 5.7291666667vw;
+  height: 100%;
+  background-color: transparent;
+  float: right;
+  color: white;
+  text-align: right;
+  font-size: 0.8333333333vw;
+}
+main nav .toolBarObject {
+  float: right;
+  color: white;
+  font-size: 1.3541666667vw;
+  line-height: 3.5vh;
+  margin-left: 0.5208333333vw;
+}
+main nav .toolBarObject:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.folderIconBackGround {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.clickObject iframe {
+  width: 100%;
+  height: 84%;
+  border: none;
+}
+
+.chromeObject {
+  z-index: 100000;
+}
+
+.alertWindow {
+  position: absolute;
+  bottom: 0;
+  width: 15.625vw;
+  height: 7.8125vw;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px 10px 0 0;
+  padding: 0.5208333333vw;
+  box-sizing: border-box;
+}
+.alertWindow .alertBar {
+  width: 100%;
+  height: 1.0416666667vw;
+  margin-bottom: 0.5208333333vw;
+}
+.alertWindow .alertWindowClose {
+  float: right;
+  font-size: 1.0416666667vw;
+}
+.alertWindow .alertWindowClose:hover {
+  cursor: pointer;
+}
+.alertWindow p {
+  font-size: 1.0416666667vw;
+}
+
+.loginPage {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  transition: all 2s;
+  top: 0;
+}
+.loginPage .loginInput {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 2.6041666667vw;
+  width: 5.2083333333vw;
+  transform: translate(-50%, -50%);
+  font-size: 1.4583333333vw;
+  box-shadow: 0 0 10px 1px black;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s;
+  line-height: 2.6041666667vw;
+  cursor: pointer;
+}
+.loginPage .loginInput:hover {
+  background-color: white;
+}
+.loginPage .loginInput:focus {
+  border: 0;
+  outline: 0;
+}
+.loginPage::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(5px);
+  background-image: url("../../img/1156488.png");
+  background-size: cover;
+}
+.loginPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+  z-index: -1;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.moveUp {
+  top: -150%;
+  background-image: url("../../img/1156488.png");
+  background-size: cover;
+  z-index: 100;
+}
+
+.imgCircle {
+  position: absolute;
+  width: 10.4166666667vw;
+  height: 10.4166666667vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: black;
+  background-image: url("../../img/alpha.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px 1px;
+}

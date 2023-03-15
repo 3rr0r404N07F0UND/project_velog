@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "JetBrains Mono", "Noto Sans KR";
+  scroll-behavior: smooth;
+  color: #444;
+}
+
+a {
+  color: black;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.second > div {
+  width: 36.4583333333vw;
+  height: 31.25vw;
+  position: absolute;
+  padding: 0.5208333333vw 1.5625vw;
+  border-radius: 1.5625vw;
+  box-shadow: 0 0 10px 1px white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a6dcef;
+}
+.second > div address, .second > div address * {
+  text-decoration: none;
+  font-style: initial;
+}
+.second > div h2 {
+  font-size: 3.125vw;
+  text-align: center;
+  margin-bottom: 0.5208333333vw;
+}
+.second > div p {
+  text-align: left;
+  font-size: 1.5625vw;
+}
+.second > div i {
+  font-size: 1.5625vw;
+  margin-right: 0.5208333333vw;
+}
+
+main {
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh auto 5vh auto;
+  background-color: #fbc6e3;
+  border-radius: 1.0416666667vw;
+  padding: 1vw;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 1px white;
+}
+main h1 {
+  font-size: 3.125vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3.125vw;
+}
+main h1 hr {
+  border: 1px solid black;
+  margin-bottom: 0.5208333333vw;
+}
+main h1 p:first-child, main h1 span {
+  font-size: 3.125vw;
+}
+main h1 span {
+  color: white;
+}
+main h1 p {
+  font-size: 1.5625vw;
+}
+
+html, body {
+  background: linear-gradient(#ffeef2, #a0e7e5);
+}
+
+.third {
+  width: 100%;
+  heihgt: 100vh;
+}
+.third div {
+  width: 25%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0 0 10px 1px #b4a7d6;
+  padding: 0.5208333333vw 1.0416666667vw;
+  overflow: hidden;
+}
+.third div h3 {
+  font-size: 1.5625vw;
+  text-align: left;
+}
+.third div h4 {
+  margin-bottom: 0.5208333333vw;
+  font-size: 0.8333333333vw;
+}
+.third div p {
+  font-size: 0.9375vw;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.downAngle {
+  margin-top: 1.0416666667vw;
+  font-size: 3.125vw;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
