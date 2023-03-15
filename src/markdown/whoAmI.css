@@ -100,7 +100,7 @@ html, body {
   heihgt: 100vh;
 }
 .third div {
-  width: 25%;
+  width: 35%;
   height: 50%;
   position: absolute;
   top: 50%;
@@ -135,4 +135,15 @@ html, body {
 
 a {
   text-decoration: none;
+}
+
+.top {
+  width: 3.125vw;
+  height: 1.5625vw;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  cursor: pointer;
 }

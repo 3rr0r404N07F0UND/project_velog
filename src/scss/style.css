@@ -477,7 +477,7 @@ main nav .toolBarObject:hover {
   right: 0;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px 10px 0 0;
-  padding: 0.5208333333vw;
+  padding: 0.5208333333vw 1.0416666667vw;
   box-sizing: border-box;
 }
 .alertWindow .alertBar {

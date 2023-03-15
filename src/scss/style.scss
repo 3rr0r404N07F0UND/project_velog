@@ -414,7 +414,7 @@ main {
   right: 0;
   background-color: $backGroundColorAlpha;
   border-radius: 10px 10px 0 0;
-  padding: 10/1920 * 100vw;
+  padding: 10/1920 * 100vw 20/1920 * 100vw;
   box-sizing: border-box;
   .alertBar {
     width: 100%;
