@@ -79,18 +79,15 @@ $(".clickObject").on("dblclick", (e) => {
   e.currentTarget.id != "chromeObject" &&
     $("#chromeObject").css("z-index", "110");
 });
-$("#introduceSelfModal")
-  .draggable({
-    containment: "parent",
-    handle: ".modalHandle",
-  })
-$("#whatCanYouDo")
-  .draggable({ containment: "parent", handle: ".modalHandle" })
-$("#portfolioModal")
-  .draggable({
-    containment: "parent",
-    handle: ".modalHandle",
-  })
+$("#introduceSelfModal").draggable({
+  containment: "parent",
+  handle: ".modalHandle",
+});
+$("#whatCanYouDo").draggable({ containment: "parent", handle: ".modalHandle" });
+$("#portfolioModal").draggable({
+  containment: "parent",
+  handle: ".modalHandle",
+});
 $("#chromeObject").draggable({
   containment: "parent",
   handle: ".modalHandle",
@@ -192,4 +189,5 @@ $("#chromeObject input").on("input", () => {
 });
 $("#windowIcon").on("click", () => {
   document.exitFullscreen();
+  //$("*").css("filter", "invert(100%)");
 });

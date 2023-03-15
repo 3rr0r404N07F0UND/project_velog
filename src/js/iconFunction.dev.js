@@ -72,5 +72,5 @@ $("#chromeObject input").on("input", function () {
   $("#chromeObject iframe").attr("src", "".concat($("#chromeObject input").val()));
 });
 $("#windowIcon").on("click", function () {
-  document.exitFullscreen();
+  document.exitFullscreen(); //$("*").css("filter", "invert(100%)");
 });
