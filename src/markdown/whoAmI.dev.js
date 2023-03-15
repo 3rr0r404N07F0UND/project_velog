@@ -1,7 +1,9 @@
 "use strict";
 
 var counter1 = 0;
-var languageArray = ["XHTML", "CSS", "JavaScript", "TypeScript", "jQuery", "jQuery UI", "SCSS", "SASS", "PUG", "Nunjucks", "MySQL", "MariaDB", "Java", "JSON", "Node.js", "Python", "Ruby", "C", "C++", "R", "SVG", "HTML"];
+var languageArray = [
+/*"XHTML",*/
+"CSS", "JavaScript", "TypeScript", "jQuery", "jQuery UI", "SCSS", "SASS", "PUG", "Nunjucks", "MySQL", "MariaDB", "Java", "JSON", "Node.js", "Python", "Ruby", "C", "C++", "R", "SVG", "HTML"];
 
 var loopArray = function loopArray() {
   setTimeout(function () {

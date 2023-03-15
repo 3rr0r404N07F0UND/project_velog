@@ -159,14 +159,14 @@ main .mainWindow .clickObject {
 }
 main .mainWindow .clickObject .modalHandle {
   width: 100%;
-  height: 6.6666%;
+  height: 8%;
   background-color: #000d15;
   box-sizing: border-box;
   padding-left: 0.8%;
   overflow: hidden;
 }
 main .mainWindow .clickObject .modalHandle .modalBar {
-  height: 90%;
+  height: 85%;
   width: 23.5%;
   margin-top: 1%;
   float: left;
@@ -177,20 +177,25 @@ main .mainWindow .clickObject .modalHandle .modalBar {
 }
 main .mainWindow .clickObject .modalHandle .modalBar .titleIntroduceSelf {
   color: white;
-  line-height: 1.5625vw;
+  padding: 5% 0;
+  box-sizing: border-box;
   margin-left: 5%;
   font-size: 1vw;
+  width: 95%;
+  overflow: hidden;
 }
 main .mainWindow .clickObject .modalHandle .modalBar .modalBarIcon {
   float: right;
+  height: auto;
   color: white;
   font-size: 0.78125vw;
   margin-right: 3%;
-  line-height: 1.5625vw;
+  box-sizing: border-box;
   width: 10%;
   border-radius: 0.5rem;
   text-align: center;
   cursor: pointer;
+  line-height: normal !important;
 }
 main .mainWindow .clickObject .modalHandle .modalBar .modalBarIcon:hover {
   background-color: #292e31;
@@ -204,6 +209,7 @@ main .mainWindow .clickObject .modalHandle .closeModal {
   font-size: 1.0416vw;
   float: right;
   cursor: pointer;
+  padding: 1% 0;
 }
 main .mainWindow .clickObject .modalHandle .closeModal:hover {
   background-color: red;
@@ -217,6 +223,7 @@ main .mainWindow .clickObject .modalHandle .fullScreenModal {
   font-size: 1.0416vw;
   float: right;
   cursor: pointer;
+  padding: 1% 0;
 }
 main .mainWindow .clickObject .modalHandle .fullScreenModal:hover {
   background-color: #0f1b24;
@@ -231,6 +238,7 @@ main .mainWindow .clickObject .modalHandle .minifyModal {
   float: right;
   cursor: pointer;
   cursor: auto;
+  padding: 1% 0;
 }
 main .mainWindow .clickObject .modalHandle .minifyModal:hover {
   background-color: #0f1b24;
@@ -282,7 +290,7 @@ main .mainWindow .clickObject .modalInterface .reverseObject {
 main .mainWindow .clickObject .modalInterface .modalInterfaceDirLocate {
   margin-left: 0.5208333333vw;
   padding-left: 0.5208333333vw;
-  height: 100%;
+  height: 90%;
   width: 90%;
   float: left;
   float: left;

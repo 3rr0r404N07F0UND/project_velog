@@ -159,7 +159,9 @@ $(".fullScreenModal").on("click", (e) => {
   $(`#${e.currentTarget.parentElement.parentElement.id}`)
     .toggleClass("fullScreenDisplay")
     .css("top", "")
-    .css("left", "");
+    .css("left", "")
+    .css("width", "")
+    .css("height", "");
   $(`#${e.currentTarget.parentElement.parentElement.id}`).hasClass(
     "fullScreenDisplay"
   ) == true &&
@@ -175,7 +177,9 @@ $(".modalHandle").on("dblclick", (e) => {
   $(`#${e.currentTarget.parentElement.id}`)
     .toggleClass("fullScreenDisplay")
     .css("top", "")
-    .css("left", "");
+    .css("left", "")
+    .css("width", "")
+    .css("height", "");
   $(`#${e.currentTarget.parentElement.id}`).hasClass("fullScreenDisplay") ==
     true && $(`#${e.currentTarget.parentElement.id}`).draggable("disable");
   $(`#${e.currentTarget.parentElement.id}`).hasClass("fullScreenDisplay") ==

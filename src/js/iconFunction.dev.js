@@ -56,12 +56,12 @@ $(".chromeFrame").on("dblclick", function (e) {
   e.currentTarget.id == "whoAmIMarkdown" && $("#chromeObject").css("display", "block") && $("#chromeObject input").attr("value", "http://kkms4001.iptime.org/~c17st11/project/velog_project/src/markdown/whoAmI.html") && $("#chromeObject iframe").attr("src", "".concat($("#chromeObject input").attr("value"))) && $("#chromeObject .titleIntroduceSelf").html("자기소개");
 });
 $(".fullScreenModal").on("click", function (e) {
-  $("#".concat(e.currentTarget.parentElement.parentElement.id)).toggleClass("fullScreenDisplay").css("top", "").css("left", "");
+  $("#".concat(e.currentTarget.parentElement.parentElement.id)).toggleClass("fullScreenDisplay").css("top", "").css("left", "").css("width", "").css("height", "");
   $("#".concat(e.currentTarget.parentElement.parentElement.id)).hasClass("fullScreenDisplay") == true && $("#".concat(e.currentTarget.parentElement.parentElement.id)).draggable("disable");
   $("#".concat(e.currentTarget.parentElement.parentElement.id)).hasClass("fullScreenDisplay") == false && $("#".concat(e.currentTarget.parentElement.parentElement.id)).draggable("enable");
 });
 $(".modalHandle").on("dblclick", function (e) {
-  $("#".concat(e.currentTarget.parentElement.id)).toggleClass("fullScreenDisplay").css("top", "").css("left", "");
+  $("#".concat(e.currentTarget.parentElement.id)).toggleClass("fullScreenDisplay").css("top", "").css("left", "").css("width", "").css("height", "");
   $("#".concat(e.currentTarget.parentElement.id)).hasClass("fullScreenDisplay") == true && $("#".concat(e.currentTarget.parentElement.id)).draggable("disable");
   $("#".concat(e.currentTarget.parentElement.id)).hasClass("fullScreenDisplay") == false && $("#".concat(e.currentTarget.parentElement.id)).draggable("enable");
 });

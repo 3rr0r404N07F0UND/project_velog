@@ -190,14 +190,14 @@ main {
       z-index: 100;
       .modalHandle {
         width: 100%;
-        height: 6.6666%;
+        height: 8%;
         background-color: #000d15;
         box-sizing: border-box;
         padding-left: 0.8%;
         overflow: hidden;
         //padding: 1rem 2rem;
         .modalBar {
-          height: 90%;
+          height: 85%;
           width: 23.5%;
           margin-top: 1%;
           float: left;
@@ -207,20 +207,26 @@ main {
           cursor: pointer;
           .titleIntroduceSelf {
             color: white;
-            line-height: 30 / 1920 * 100vw;
+            padding: 5% 0;
+            box-sizing: border-box;
             margin-left: 5%;
             font-size: 1vw;
+            width: 95%;
+            overflow: hidden;
           }
           .modalBarIcon {
             float: right;
+            height: auto;
             color: white;
             font-size: 0.78125vw;
             margin-right: 3%;
-            line-height: 30 / 1920 * 100vw;
+            //padding: 1% 0;
+            box-sizing: border-box;
             width: 10%;
             border-radius: 0.5rem;
             text-align: center;
             cursor: pointer;
+            line-height: normal !important;
             &:hover {
               background-color: #292e31;
             }
@@ -228,13 +234,16 @@ main {
         }
         .closeModal {
           @include modalClickIcon(red);
+          padding: 1% 0;
         }
         .fullScreenModal {
           @include modalClickIcon(#0f1b24);
+          padding: 1% 0;
         }
         .minifyModal {
           @include modalClickIcon(#0f1b24);
           cursor: auto;
+          padding: 1% 0;
         }
       }
       .modalToolBar {
@@ -283,7 +292,7 @@ main {
         .modalInterfaceDirLocate {
           margin-left: 10 / 1920 * 100vw;
           padding-left: 10/1920 * 100vw;
-          height: 100%;
+          height: 90%;
           width: 90%;
           float: left;
           float: left;

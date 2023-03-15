@@ -1,6 +1,6 @@
 let counter1 = 0;
 const languageArray = [
-  "XHTML",
+  /*"XHTML",*/
   "CSS",
   "JavaScript",
   "TypeScript",
