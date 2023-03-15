@@ -33,7 +33,6 @@ section {
 }
 
 .second > div {
-  width: 36.4583333333vw;
   height: 31.25vw;
   position: absolute;
   padding: 0.5208333333vw 1.5625vw;
@@ -45,11 +44,6 @@ section {
 .second > div address, .second > div address * {
   text-decoration: none;
   font-style: initial;
-}
-.second > div h2 {
-  font-size: 3.125vw;
-  text-align: center;
-  margin-bottom: 0.5208333333vw;
 }
 .second > div p {
   text-align: left;

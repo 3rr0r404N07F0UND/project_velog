@@ -1,0 +1,15 @@
+.second > div {
+  width: 52.083333333333336vw;
+}
+.second > div address {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+.second > div address:first-child {
+  padding-right: 5%;
+  border-right: 1px solid #333;
+}
+.second > div address:nth-child(2) {
+  padding-left: 5%;
+}
