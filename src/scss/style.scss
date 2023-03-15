@@ -197,7 +197,7 @@ main {
         overflow: hidden;
         //padding: 1rem 2rem;
         .modalBar {
-          height: 75%;
+          height: 90%;
           width: 23.5%;
           margin-top: 1%;
           float: left;
@@ -243,6 +243,7 @@ main {
         background-color: #1a2126;
         box-sizing: border-box;
         padding-left: 1.5%;
+        overflow: hidden;
         .modalToolBarNew {
           color: white;
           font-size: 25 / 1920 * 100vw;
