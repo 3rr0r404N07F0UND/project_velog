@@ -92,10 +92,10 @@ $("#chromeObject").draggable({
   containment: "parent",
   handle: ".modalHandle",
 });
-$("#chromeObject").resizable();
-$("#introduceSelfModal").resizable();
-$("#whatCanYouDo").resizable();
-$("#portfolioModal").resizable();
+$("#chromeObject").resizable({ autoHide: true, handles: "w, e, s, n" });
+$("#introduceSelfModal").resizable({ autoHide: true, handles: "w, e, s, n" });
+$("#whatCanYouDo").resizable({ autoHide: true, handles: "w, e, s, n" });
+$("#portfolioModal").resizable({ autoHide: true, handles: "w, e, s, n" });
 $(".chromeFrame").on("dblclick", (e) => {
   chromeBackgroundColor == 0 && chromeBackgroundColor++;
   e.currentTarget.id == "arrayChrome" &&

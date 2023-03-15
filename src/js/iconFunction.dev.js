@@ -43,10 +43,22 @@ $("#chromeObject").draggable({
   containment: "parent",
   handle: ".modalHandle"
 });
-$("#chromeObject").resizable();
-$("#introduceSelfModal").resizable();
-$("#whatCanYouDo").resizable();
-$("#portfolioModal").resizable();
+$("#chromeObject").resizable({
+  autoHide: true,
+  handles: "w, e, s, n"
+});
+$("#introduceSelfModal").resizable({
+  autoHide: true,
+  handles: "w, e, s, n"
+});
+$("#whatCanYouDo").resizable({
+  autoHide: true,
+  handles: "w, e, s, n"
+});
+$("#portfolioModal").resizable({
+  autoHide: true,
+  handles: "w, e, s, n"
+});
 $(".chromeFrame").on("dblclick", function (e) {
   chromeBackgroundColor == 0 && chromeBackgroundColor++;
   e.currentTarget.id == "arrayChrome" && $("#chromeObject").css("display") == "none" && $("#chromeObject").css("display", "block") && $("#chromeObject input").attr("value", "http://kkms4001.iptime.org/~c17st11/project/array_project/ver_alpha0.002/main/html/") && $("#chromeObject iframe").attr("src", "".concat($("#chromeObject input").attr("value"))) && $("#chromeObject .titleIntroduceSelf").html("행렬계산기");
