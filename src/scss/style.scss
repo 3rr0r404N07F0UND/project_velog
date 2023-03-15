@@ -261,11 +261,12 @@ main {
         width: 100%;
         box-sizing: border-box;
         padding-top: 1%;
+        overflow: hidden;
         .modalInterfaceIcon {
           cursor: auto;
           margin-left: 5 / 1920 * 100vw;
-          width: 30 / 1920 * 100vw;
-          height: 30 / 1920 * 100vw;
+          width: 3%;
+          height: 100%;
           font-size: 30 / 1920 * 100vw;
           line-height: 29 / 1920 * 100vw;
           color: white;
@@ -282,8 +283,9 @@ main {
         .modalInterfaceDirLocate {
           margin-left: 10 / 1920 * 100vw;
           padding-left: 10/1920 * 100vw;
-          height: 30 / 1920 * 100vw;
+          height: 100%;
           width: 90%;
+          float: left;
           float: left;
           font-size: 16 / 1920 * 100vw;
           line-height: 30/1920 * 100vw;

@@ -259,12 +259,13 @@ main .mainWindow .clickObject .modalInterface {
   width: 100%;
   box-sizing: border-box;
   padding-top: 1%;
+  overflow: hidden;
 }
 main .mainWindow .clickObject .modalInterface .modalInterfaceIcon {
   cursor: auto;
   margin-left: 0.2604166667vw;
-  width: 1.5625vw;
-  height: 1.5625vw;
+  width: 3%;
+  height: 100%;
   font-size: 1.5625vw;
   line-height: 1.5104166667vw;
   color: white;
@@ -281,8 +282,9 @@ main .mainWindow .clickObject .modalInterface .reverseObject {
 main .mainWindow .clickObject .modalInterface .modalInterfaceDirLocate {
   margin-left: 0.5208333333vw;
   padding-left: 0.5208333333vw;
-  height: 1.5625vw;
+  height: 100%;
   width: 90%;
+  float: left;
   float: left;
   font-size: 0.8333333333vw;
   line-height: 1.5625vw;
