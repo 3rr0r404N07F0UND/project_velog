@@ -33,7 +33,7 @@ section {
 }
 
 .second > div {
-  height: 31.25vw;
+  height: auto;
   position: absolute;
   padding: 0.5208333333vw 1.5625vw;
   border-radius: 1.5625vw;

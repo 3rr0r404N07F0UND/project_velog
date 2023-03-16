@@ -7,7 +7,7 @@
   float: left;
 }
 .second > div .introduceSelf:first-child {
-  padding-left: 5%;
+  padding-left: 8%;
 }
 .second > div .introduceSelf:nth-child(2) {
   padding-left: 5%;
@@ -19,4 +19,7 @@
 }
 h1 span {
   color: #f00;
+}
+a *:hover {
+  color: #777;
 }
