@@ -575,3 +575,8 @@ main nav .toolBarObject:hover {
   background-position: center;
   box-shadow: 0 0 10px 1px;
 }
+
+#portfolioModal {
+  top: 15vh;
+  left: 20vh;
+}

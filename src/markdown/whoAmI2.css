@@ -24,3 +24,7 @@ h1 span {
 a *:hover {
   color: #777;
 }
+h2 {
+  font-size: 1.875vw;
+  font-weight: normal;
+}
