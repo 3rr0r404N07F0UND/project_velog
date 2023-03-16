@@ -8,6 +8,7 @@ const languageArray = [
   "jQuery UI",
   "SCSS",
   "SASS",
+  "Stylus",
   "PUG",
   "Nunjucks",
   "MySQL",
