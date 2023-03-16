@@ -78,9 +78,6 @@ main h1 hr {
 main h1 p:first-child, main h1 span {
   font-size: 3.125vw;
 }
-main h1 span {
-  color: white;
-}
 main h1 p {
   font-size: 1.5625vw;
 }
