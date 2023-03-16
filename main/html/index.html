@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <title>동민님의 블로그</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.css" integrity="sha512-lCk0aEL6CvAGQvaZ47hoq1v/hNsunE8wD4xmmBelkJjg51DauW6uVdaWEJlwgAE6PxcY7/SThs1T4+IMwwpN7w==" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script defer="defer" charset="UTF-8" src="../js/requestFullscreen.js"></script>
+    <script defer="defer" charset="UTF-8" src="../js/iconFunction.js"></script>
+  </head>
+  <body>
+    <!--img#bootingWindow.bootingWindow(-->
+    <!--  src="../../img/shutdown.svg",-->
+    <!--  alt="turn on and turn off icon"-->
+    <!--)-->
+    <!--img#bigWindowIcon.bigWindowIcon(-->
+    <!--  src="../../img/Windows_10x_Icon.png",-->
+    <!--  alt="window main logo"-->
+    <!--)-->
+    <!--#loadingCircle.xi-spinner-2.xi-spin.loadingCircle-->
+    <!--h1 블로그에 방문하신 것을 환영합니다.<br />Welcome to Blog-->
+    <!--h2 거의 다 준비 되었습니다.-->
+    <!--h3 PC를 끄지 마세요.-->
+    <div class="loginPage" id="loginPage">
+      <div class="imgCircle" id="imgCircle"></div>
+      <button class="loginInput" id="loginInput">Login</button>
+    </div>
+    <main class="bootingObject">
+      <section class="mainWindow">
+        <div class="alertWindow" id="alertWindow">
+          <div class="alertBar">
+            <div class="xi-close alertWindowClose" id="alertWindowClose"></div>
+          </div>
+          <p>블로그에 오신 것을 환영합니다. 자기소개 폴더와 포트폴리오 폴더를 확인해주세요.</p>
+        </div>
+        <div class="iconDefault iconDBLClick" id="introduceSelfMD"><img src="../../img/icons8-file-folder-48.png" alt="test">
+          <p>자기소개</p>
+        </div>
+        <div class="iconDefault iconDBLClick" id="portfolioFolder"><img src="../../img/icons8-file-folder-48.png" alt="test">
+          <p>포트폴리오</p>
+        </div>
+        <div class="clickObject" id="introduceSelfModal">
+          <div class="modalHandle">
+            <div class="modalBar">
+              <div class="titleIntroduceSelf">자기소개
+                <div class="xi-close modalBarIcon closeModal" id="introduceSelfModalClose2"></div>
+              </div>
+            </div>
+            <div class="xi-close closeModal" id="introduceSelfModalClose"></div>
+            <div class="xi-checkbox-blank fullScreenModal"></div>
+            <div class="xi-minus minifyModal"></div>
+          </div>
+          <div class="modalToolBar">
+            <div class="xi-plus-circle-o modalToolBarNew">&nbsp;&nbsp;새로 만들기</div>
+          </div>
+          <div class="modalInterface">
+            <div class="modalInterfaceIcon xi-backspace"></div>
+            <div class="modalInterfaceIcon xi-backspace reverseObject"></div>
+            <input class="modalInterfaceDirLocate" type="text" value="C:\Users\user\Desktop\자기소개">
+          </div>
+          <div class="modalFileSection">
+            <div class="iconDefault chromeFrame" id="whoAmIMarkdown"><img src="../../img/Visual_Studio_Code_1.35_icon.svg" alt="test">
+              <p>whoAmI.md</p>
+            </div>
+            <div class="iconDefault iconDBLClick" id="toolFolderIcon"><img src="../../img/icons8-file-folder-48.png" alt="test">
+              <p>도구</p>
+            </div>
+          </div>
+        </div>
+        <div class="clickObject" id="portfolioModal">
+          <div class="modalHandle">
+            <div class="modalBar">
+              <div class="titleIntroduceSelf">포트폴리오
+                <div class="xi-close modalBarIcon closeModal" id="portfolioModalClose2"></div>
+              </div>
+            </div>
+            <div class="xi-close closeModal" id="portfolioModalClose"></div>
+            <div class="xi-checkbox-blank fullScreenModal"></div>
+            <div class="xi-minus minifyModal"></div>
+          </div>
+          <div class="modalToolBar">
+            <div class="xi-plus-circle-o modalToolBarNew">&nbsp;&nbsp;새로 만들기</div>
+          </div>
+          <div class="modalInterface">
+            <div class="modalInterfaceIcon xi-backspace"></div>
+            <div class="modalInterfaceIcon xi-backspace reverseObject"></div>
+            <input class="modalInterfaceDirLocate" type="text" value="C:\Users\user\Desktop\자기소개">
+          </div>
+          <div class="modalFileSection">
+            <!--a#arrayChrome.chromeFrame(-->
+            <!--  href="http://kkms4001.iptime.org/~c17st11/portfolio/array_project/ver_alpha0.002/main/html/",-->
+            <!--  target="_blank",-->
+            <!--  title="행렬 계산기"-->
+            <!--)-->
+            <div class="iconDefault chromeFrame" id="arrayChrome"><img src="../../img/Google_Chrome_icon_(February_2022).svg" alt="portfolio">
+              <p>행렬계산기</p>
+            </div>
+            <!--a(-->
+            <!--  href="http://kkms4001.iptime.org/~c17st11/portfolio/array_project/doc/2023_01_30_array_project.pdf",-->
+            <!--  target="_blank",-->
+            <!--  title="행렬 계산기"-->
+            <!--)-->
+            <div class="iconDefault chromeFrame" id="arrayPDF"><img src="../../img/icons/pdf.svg" alt="portfolio">
+              <p>행렬계산기.pdf</p>
+            </div>
+            <!--a(-->
+            <!--  href="http://kkms4001.iptime.org/~c17st11/portfolio/Jinsu/main/html/",-->
+            <!--  target="_blank",-->
+            <!--  title="진수 계산기"-->
+            <!--)-->
+            <div class="iconDefault chromeFrame" id="jinsuChrome"><img src="../../img/Google_Chrome_icon_(February_2022).svg" alt="portfolio">
+              <p>진수계산기</p>
+            </div>
+            <!--a(href="", target="_blank", title="진수 계산기")-->
+            <div class="iconDefault chromeFrame" id="jinsuPDF"><img src="../../img/icons/pdf.svg" alt="portfolio">
+              <p>진수계산기.pdf</p>
+            </div>
+          </div>
+        </div>
+        <div class="clickObject" id="whatCanYouDo">
+          <div class="modalHandle">
+            <div class="modalBar">
+              <div class="titleIntroduceSelf">도구
+                <div class="xi-close modalBarIcon closeModal" id="whatCanYouDoClose2"></div>
+              </div>
+            </div>
+            <div class="xi-close closeModal" id="whatCanYouDoClose"></div>
+            <div class="xi-checkbox-blank fullScreenModal"></div>
+            <div class="xi-minus minifyModal"></div>
+          </div>
+          <div class="modalToolBar">
+            <div class="xi-plus-circle-o modalToolBarNew">&nbsp;&nbsp;새로 만들기</div>
+          </div>
+          <div class="modalInterface">
+            <div class="modalInterfaceIcon xi-backspace"></div>
+            <div class="modalInterfaceIcon xi-backspace reverseObject"></div>
+            <input class="modalInterfaceDirLocate" type="text" value="C:\Users\user\Desktop\자기소개\도구">
+          </div>
+          <div class="modalFileSection">
+            <!--a(href="https://www.w3.org/", target="_blank", title="html 사이트")-->
+            <div class="iconDefault"><img src="../../img/icons/html.svg" alt="test">
+              <p>HTML.html</p>
+            </div>
+            <!--a(href="https://www.w3.org/", target="_blank", title="xhtml 사이트")-->
+            <div class="iconDefault"><img src="../../img/icons/html.svg" alt="xhtml icons">
+              <p>XHTML.xhtml</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.w3.org/TR/CSS/#css",-->
+            <!--  target="_blank",-->
+            <!--  title="CSS 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/css.svg" alt="test">
+              <p>CSS.css</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/",-->
+            <!--  target="_blank",-->
+            <!--  title="JavaScript 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/javascript.svg" alt="test">
+              <p>JavaScript.js</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.typescriptlang.org/",-->
+            <!--  target="_blank",-->
+            <!--  title="TypeScript 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/typescript.svg" alt="typescript icon">
+              <p>TypeScript.ts</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://jquery.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="jQuery 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/jquery-4.svg" alt="jQuery icon">
+              <p>jQuery.js</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://jqueryui.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="jQuery ui 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/jquery-ui.svg" alt="jQuery ui icon">
+              <p>jQuery UI.js</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://sass-lang.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="scss 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/sass.svg" alt="test">
+              <p>SCSS.scss</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://sass-lang.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="sass 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/sass.svg" alt="test">
+              <p>SASS.sass</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://pugjs.org/api/getting-started.html",-->
+            <!--  target="_blank",-->
+            <!--  title="PUG 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/pug.svg" alt="test">
+              <p>PUG.pug</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://mozilla.github.io/nunjucks/",-->
+            <!--  target="_blank",-->
+            <!--  title="nunjucks 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/nunjucks.svg" alt="test">
+              <p>Nunjucks.njk</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.mysql.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="MySQL 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/database.svg" alt="test">
+              <p>MySQL.sql</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://mariadb.org/",-->
+            <!--  target="_blank",-->
+            <!--  title="MariaDB 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/database.svg" alt="MariaDB">
+              <p>MariaDB.sql</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.java.com/ko/",-->
+            <!--  target="_blank",-->
+            <!--  title="JAVA 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/java.svg" alt="test">
+              <p>Java.java</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.json.org/json-en.html",-->
+            <!--  target="_blank",-->
+            <!--  title="JSON 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/json.svg" alt="test">
+              <p>JSON.json</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://nodejs.org/ko/",-->
+            <!--  target="_blank",-->
+            <!--  title="Node.js 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/nodejs.svg" alt="test">
+              <p>Node.js</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.python.org/",-->
+            <!--  target="_blank",-->
+            <!--  title="python 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/python.svg" alt="test">
+              <p>Python.py</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.ruby-lang.org/en/",-->
+            <!--  target="_blank",-->
+            <!--  title="Ruby 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/ruby.svg" alt="ruby icon">
+              <p>Ruby.rb</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://en.cppreference.com/w/",-->
+            <!--  target="_blank",-->
+            <!--  title="C 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/c.svg" alt="c icon">
+              <p>C.c</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://en.cppreference.com/w/",-->
+            <!--  target="_blank",-->
+            <!--  title="C++ 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/cpp.svg" alt="C++ icon">
+              <p>C++.cpp</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.r-project.org/",-->
+            <!--  target="_blank",-->
+            <!--  title="R 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/r.svg" alt="test">
+              <p>R.r</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.w3.org/2000/svg",-->
+            <!--  target="_blank",-->
+            <!--  title="SVG 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/svg.svg" alt="test">
+              <p>SVG.svg</p>
+            </div>
+            <!--a(href="https://www.vim.org/", target="_blank", title="VIM 사이트")//--------------- tool ------------
+            -->
+            <div class="iconDefault"><img src="../../img/icons/vim.svg" alt="test">
+              <p>Vim</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://app.diagrams.net/",-->
+            <!--  target="_blank",-->
+            <!--  title="drawio 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/drawio.svg" alt="test">
+              <p>Diagrams</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.figma.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="figma 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/figma.svg">
+              <p>figma</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://learn.microsoft.com/ko-kr/powershell/",-->
+            <!--  target="_blank",-->
+            <!--  title="powershell 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/powershell.svg" alt="powershell icon">
+              <p>powershell</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.gnu.org/software/bash/",-->
+            <!--  target="_blank",-->
+            <!--  title="bash 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/icons/console.svg" alt="bash icon">
+              <p>bash</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://code.visualstudio.com/",-->
+            <!--  target="_blank",-->
+            <!--  title="visual studio code 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/Visual_Studio_Code_1.35_icon.svg" alt="visual studio code icon">
+              <p>VSC</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://apps.microsoft.com/store/detail/windows-notepad/9MSMLRH6LZF3",-->
+            <!--  target="_blank",-->
+            <!--  title="메모장 사이트"-->
+            <!--)-->
+            <div class="iconDefault notepadIcon"><img src="../../img/Notepad_Win11.png" alt="notepad icon">
+              <p>NOTEPAD</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.adobe.com/kr/",-->
+            <!--  target="_blank",-->
+            <!--  title="adobe illust 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator CC icon">
+              <p>Illustrator</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.adobe.com/kr/",-->
+            <!--  target="_blank",-->
+            <!--  title="Photoshop 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/Adobe_Photoshop_CC_icon.svg" alt="Adobe Photoshop CC icon">
+              <p>Photoshop</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.adobe.com/kr/",-->
+            <!--  target="_blank",-->
+            <!--  title="XD 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/Adobe_XD_CC_icon.svg" alt="Adobe XD icon">
+              <p>XD</p>
+            </div>
+            <!--a(-->
+            <!--  href="https://www.notion.so/ko-kr",-->
+            <!--  target="_blank",-->
+            <!--  title="notion 사이트"-->
+            <!--)-->
+            <div class="iconDefault"><img src="../../img/Notion-logo.svg" alt="Notion icon">
+              <p>Notion</p>
+            </div>
+          </div>
+        </div>
+        <div class="clickObject chromeObject" id="chromeObject">
+          <div class="modalHandle">
+            <div class="modalBar">
+              <div class="titleIntroduceSelf">
+                <div class="xi-close modalBarIcon closeModal" id="arrayProjectClose2"></div>
+              </div>
+            </div>
+            <div class="xi-close closeModal" id="arrayProjectClose"></div>
+            <div class="xi-checkbox-blank fullScreenModal"></div>
+            <div class="xi-minus minifyModal"></div>
+          </div>
+          <div class="modalInterface">
+            <div class="modalInterfaceIcon xi-backspace"></div>
+            <div class="modalInterfaceIcon xi-backspace reverseObject"></div>
+            <input class="modalInterfaceDirLocate" type="text" value="">
+          </div>
+          <iframe src=""></iframe>
+        </div>
+      </section>
+      <nav><img class="windowIcon" id="windowIcon" src="../../img/Windows_10x_Icon.png" alt="window icon"><img class="searchIcon" id="searchIcon" src="../../img/search.svg" alt="window search icon"><img class="taskViewIcon" id="taskViewIcon" src="../../img/taskView.svg" alt="window task view icon"><img class="folderIcon" id="folderIcon" src="../../img/icons8-file-folder-48.png" alt="window folder icon"><img class="chromeIcon" id="chromeIcon" src="../../img/Google_Chrome_icon_(February_2022).svg" alt="chrome icon">
+        <div class="timeObject" id="timeObject"></div>
+        <div class="xi-wifi toolBarObject"></div>
+        <div class="xi-volume-up toolBarObject"></div>
+        <div class="toolBarObject">A</div>
+        <div class="toolBarObject xi-angle-up"></div>
+      </nav>
+    </main>
+  </body>
+</html>
