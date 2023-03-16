@@ -1,5 +1,5 @@
 .second > div {
-  width: 52.083333333333336vw;
+  width: 72.91666666666666vw;
 }
 .second > div .introduceSelf {
   box-sizing: border-box;
@@ -7,12 +7,12 @@
   float: left;
 }
 .second > div .introduceSelf:first-child {
-  padding-left: 8%;
+  padding-right: 0%;
 }
 .second > div .introduceSelf:nth-child(2) {
-  padding-left: 5%;
+  padding-left: 20%;
   border-left: 1px solid #333;
-  padding-top: 23%;
+  padding-top: 18%;
 }
 .second > div .introduceSelf p {
   word-spacing: -0.5ch;
