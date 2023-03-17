@@ -14,7 +14,7 @@
     transform: scale(1.2);
   }
 }
-@mixin modalClickIcon($color) {
+@mixin modalClickIcon($color, $font: 1.0416vw) {
   text-align: center;
   width: 5%;
   //margin-top: 0.8%;
@@ -535,7 +535,7 @@ main {
   }
   .timeObject {
     width: 300/1920 * 100vw !important;
-    font-size: 30/1920 * 100vw !important;
+    font-size: 45/1920 * 100vw !important;
   }
   .alertWindow {
     display: none;
@@ -569,14 +569,23 @@ main {
     width: 200/1920 * 100vw !important;
     font-size: 56/1920 * 100vw !important;
   }
+  .closeModal,
+  .fullScreenModal,
+  .minifyModal {
+    font-size: 60/1920 * 100vw !important;
+  }
 }
 @media screen and (max-width: 425px) {
   .iconDefault {
     width: 320/1920 * 100vw !important;
     height: 320/1920 * 100vw !important;
     p {
-      font-size: 60/1920 * 100vw !important;
+      font-size: 40/1920 * 100vw !important;
     }
+  }
+  .timeObject {
+    width: 450/1920 * 100vw !important;
+    font-size: 70/1920 * 100vw !important;
   }
   .modalBar {
     display: none;
@@ -595,5 +604,10 @@ main {
     height: 150/1920 * 100vw !important;
     width: 300/1920 * 100vw !important;
     font-size: 84/1920 * 100vw !important;
+  }
+  .closeModal,
+  .fullScreenModal,
+  .minifyModal {
+    font-size: 60/1920 * 100vw !important;
   }
 }

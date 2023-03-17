@@ -607,7 +607,7 @@ main nav .toolBarObject:hover {
 
   .timeObject {
     width: 15.625vw !important;
-    font-size: 1.5625vw !important;
+    font-size: 2.34375vw !important;
   }
 
   .alertWindow {
@@ -648,6 +648,12 @@ main nav .toolBarObject:hover {
     width: 10.4166666667vw !important;
     font-size: 2.9166666667vw !important;
   }
+
+  .closeModal,
+.fullScreenModal,
+.minifyModal {
+    font-size: 3.125vw !important;
+  }
 }
 @media screen and (max-width: 425px) {
   .iconDefault {
@@ -655,7 +661,12 @@ main nav .toolBarObject:hover {
     height: 16.6666666667vw !important;
   }
   .iconDefault p {
-    font-size: 3.125vw !important;
+    font-size: 2.0833333333vw !important;
+  }
+
+  .timeObject {
+    width: 23.4375vw !important;
+    font-size: 3.6458333333vw !important;
   }
 
   .modalBar {
@@ -679,5 +690,11 @@ main nav .toolBarObject:hover {
     height: 7.8125vw !important;
     width: 15.625vw !important;
     font-size: 4.375vw !important;
+  }
+
+  .closeModal,
+.fullScreenModal,
+.minifyModal {
+    font-size: 3.125vw !important;
   }
 }
