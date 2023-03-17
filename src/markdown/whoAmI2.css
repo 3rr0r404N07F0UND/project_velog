@@ -25,6 +25,117 @@ a *:hover {
   color: #777;
 }
 h2 {
-  font-size: 1.875vw;
+  font-size: 2.395833333333333vw;
   font-weight: normal;
+}
+.orderListP > p {
+  position: relative;
+}
+.orderListP > p:first-child::before {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.354166666666667vw;
+  line-height: 2.083333333333333vw;
+  width: 2.083333333333333vw;
+  height: 2.083333333333333vw;
+  position: absolute;
+  border-radius: 50%;
+  content: "1";
+  bottom: 4.166666666666666vw;
+  right: 22.395833333333336vw;
+  color: #fff;
+  background-color: #a7f;
+}
+.orderListP > p:nth-child(3)::after {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.354166666666667vw;
+  line-height: 2.083333333333333vw;
+  width: 2.083333333333333vw;
+  height: 2.083333333333333vw;
+  position: absolute;
+  border-radius: 50%;
+  content: "2";
+  bottom: 4.947916666666666vw;
+  right: -2.604166666666667vw;
+  color: #fff;
+  background-color: #c3aed6;
+}
+.orderListP > p:last-child::before {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.354166666666667vw;
+  line-height: 2.083333333333333vw;
+  width: 2.083333333333333vw;
+  height: 2.083333333333333vw;
+  position: absolute;
+  border-radius: 50%;
+  content: "3";
+  bottom: 4.166666666666666vw;
+  right: 22.395833333333336vw;
+  color: #fff;
+  background-color: #6155a6;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 4.791666666666667vw !important;
+  }
+  h1 {
+    font-size: 4.6875vw !important;
+    overflow-wrap: normal !important;
+    width: 100%;
+  }
+  h1 p {
+    font-size: 3.125vw !important;
+  }
+  h1 p:first-child {
+    font-size: 4.6875vw !important;
+    overflow-wrap: normal !important;
+  }
+  h1 p:first-child span {
+    font-size: 4.6875vw !important;
+    overflow-wrap: normal !important;
+  }
+  .introduceSelf p {
+    line-height: normal !important;
+    font-size: 3.125vw !important;
+  }
+  .introduceSelf {
+    border: none !important;
+  }
+  address.introduceSelf {
+    overflow-wrap: break-word !important;
+  }
+  .downAngle {
+    font-size: 4.6875vw !important;
+  }
+  p::before {
+    display: none;
+  }
+  p::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  h2 {
+    font-size: 7.187499999999999vw !important;
+  }
+  h1 {
+    font-size: 6.25vw !important;
+  }
+  h1 p {
+    font-size: 4.6875vw !important;
+  }
+  h1 p:first-child {
+    font-size: 6.25vw !important;
+  }
+  h1 p:first-child span {
+    font-size: 6.25vw !important;
+  }
+  .introduceSelf p {
+    font-size: 4.6875vw !important;
+  }
+  .downAngle {
+    font-size: 6.25vw !important;
+  }
 }

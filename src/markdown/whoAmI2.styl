@@ -19,6 +19,89 @@ a
   *
     &:hover
       color #777
+numberBeforeLeft(number)
+  text-align center
+  font-weight bold
+  font-size (26/1920)*100vw
+  line-height (40/1920)*100vw
+  width (40/1920)*100vw
+  height (40/1920)*100vw
+  position absolute
+  //border 5px solid #C0FEFC
+  border-radius: 50%
+  content number
+  bottom (80/1920)*100vw
+  right (430/1920)*100vw
+  color white
+numberBeforeRight(number)
+  text-align: center
+  font-weight: bold
+  font-size: (26/1920)*100vw
+  line-height: (40/1920)*100vw
+  width (40/1920)*100vw
+  height (40/1920)*100vw
+  position absolute
+  //border 5px solid #C0FEFC
+  border-radius 50%
+  content number
+  bottom (95/1920)*100vw
+  right (-50/1920)*100vw
+  color white
 h2
-  font-size (36/1920) * 100vw
-  font-weight: normal
+  font-size (46/1920) * 100vw
+  font-weight normal
+.orderListP > p
+  position relative
+  //text-decoration underline !important
+  &:first-child::before
+    numberBeforeLeft("1")
+    background-color #AA77FF
+  &:nth-child(3)::after
+    numberBeforeRight("2")
+    background-color #C3AED6
+  &:last-child::before
+    numberBeforeLeft("3")
+    background-color #6155A6
+@media screen and (max-width 768px)
+  h2
+    font-size: (92/1920)*100vw !important
+  h1
+    font-size (90/1920)*100vw !important
+    overflow-wrap normal !important
+    width 100%
+    p
+      font-size: (60/1920)*100vw !important
+      &:first-child
+        font-size (90/1920)*100vw !important
+        overflow-wrap: normal !important
+        span
+          font-size (90/1920)*100vw !important
+          overflow-wrap: normal !important
+  .introduceSelf p
+    line-height normal !important
+    font-size (60/1920)*100vw !important
+  .introduceSelf
+    border: none !important
+  address.introduceSelf
+    overflow-wrap: break-word !important
+  .downAngle
+    font-size: (90/1920)*100vw !important
+  p::before
+    display: none
+  p::after
+    display: none
+@media screen and (max-width 425px)
+  h2
+    font-size: (138/1920)*100vw !important
+  h1
+    font-size: (120/1920)*100vw !important
+    p
+      font-size: (90/1920)*100vw !important
+      &:first-child
+        font-size: (120/1920)*100vw !important
+        span
+          font-size: (120/1920)*100vw !important
+  .introduceSelf p
+    font-size: (90/1920)*100vw !important
+  .downAngle
+    font-size: (120/1920)*100vw !important

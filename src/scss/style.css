@@ -307,6 +307,7 @@ main .mainWindow .clickObject .modalFileSection {
   flex-direction: row;
   align-content: flex-start;
   flex-wrap: wrap;
+  overflow: scroll;
 }
 main .mainWindow .clickObject .modalFileSection .iconDefault {
   cursor: pointer;
@@ -333,11 +334,11 @@ main .mainWindow .clickObject .modalFileSection .notepadIcon img {
   height: 95%;
 }
 main .mainWindow .fullScreenDisplay {
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+  width: 100% !important;
+  height: 100% !important;
+  transform: translate(-50%, -50%) !important;
+  left: 50% !important;
+  top: 50% !important;
 }
 main nav {
   position: absolute;
@@ -577,20 +578,106 @@ main nav .toolBarObject:hover {
 }
 
 #portfolioModal {
-  top: 15vh;
-  left: 20vh;
+  top: 13vh;
+  left: 18vh;
 }
 
 #chromeObject {
-  top: 20vh;
-  left: 25vh;
+  top: 16vh;
+  left: 21vh;
 }
 
 #whatCanYouDo {
-  top: 25vh;
-  left: 30vh;
+  top: 19vh;
+  left: 22vh;
 }
 
 .noneCursor {
   cursor: default !important;
+}
+
+@media screen and (max-width: 900px) {
+  .modalFileSection {
+    padding-bottom: 100px;
+  }
+
+  .toolBarObject {
+    display: none;
+  }
+
+  .timeObject {
+    width: 15.625vw !important;
+    font-size: 1.5625vw !important;
+  }
+
+  .alertWindow {
+    display: none;
+  }
+
+  .iconDefault {
+    width: 8.3333333333vw !important;
+    height: 8.3333333333vw !important;
+  }
+  .iconDefault p {
+    font-size: 1.5625vw !important;
+  }
+
+  .modalBar {
+    display: none;
+  }
+
+  .clickObject {
+    height: 104.1666666667vw !important;
+  }
+
+  .modalToolBarNew {
+    display: none;
+  }
+
+  .modalInterfaceDirLocate {
+    font-size: 1.5625vw;
+  }
+
+  .imgCircle {
+    width: 20.8333333333vw !important;
+    height: 20.8333333333vw !important;
+  }
+
+  .loginInput {
+    height: 5.2083333333vw !important;
+    width: 10.4166666667vw !important;
+    font-size: 2.9166666667vw !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .iconDefault {
+    width: 16.6666666667vw !important;
+    height: 16.6666666667vw !important;
+  }
+  .iconDefault p {
+    font-size: 3.125vw !important;
+  }
+
+  .modalBar {
+    display: none;
+  }
+
+  .modalToolBarNew {
+    display: none;
+  }
+
+  .modalInterfaceDirLocate {
+    font-size: 3.125vw !important;
+  }
+
+  .imgCircle {
+    width: 31.25vw !important;
+    height: 31.25vw !important;
+  }
+
+  .loginInput {
+    height: 7.8125vw !important;
+    width: 15.625vw !important;
+    font-size: 4.375vw !important;
+  }
 }

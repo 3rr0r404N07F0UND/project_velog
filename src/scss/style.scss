@@ -178,8 +178,8 @@ main {
     }
     .clickObject {
       display: none;
-      width: 52.0833vw;
-      height: 31.25vw;
+      width: 52.0833vw; // 1000
+      height: 31.25vw; // 600
       background-color: #191919;
       position: absolute;
       border: 2px solid #2f2f3e;
@@ -310,6 +310,7 @@ main {
         flex-direction: row;
         align-content: flex-start;
         flex-wrap: wrap;
+        overflow: scroll;
         .iconDefault {
           cursor: pointer;
           box-sizing: border-box;
@@ -338,11 +339,11 @@ main {
       }
     }
     .fullScreenDisplay {
-      width: 100%;
-      height: 100%;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
+      width: 100% !important;
+      height: 100% !important;
+      transform: translate(-50%, -50%) !important;
+      left: 50% !important ;
+      top: 50% !important;
     }
   }
   nav {
@@ -511,17 +512,88 @@ main {
   box-shadow: 0 0 10px 1px;
 }
 #portfolioModal {
-  top: 15vh;
-  left: 20vh;
+  top: 13vh;
+  left: 18vh;
 }
 #chromeObject {
-  top: 20vh;
-  left: 25vh;
+  top: 16vh;
+  left: 21vh;
 }
 #whatCanYouDo {
-  top: 25vh;
-  left: 30vh;
+  top: 19vh;
+  left: 22vh;
 }
 .noneCursor {
   cursor: default !important;
+}
+@media screen and (max-width: 900px) {
+  .modalFileSection {
+    padding-bottom: 100px;
+  }
+  .toolBarObject {
+    display: none;
+  }
+  .timeObject {
+    width: 300/1920 * 100vw !important;
+    font-size: 30/1920 * 100vw !important;
+  }
+  .alertWindow {
+    display: none;
+  }
+  .iconDefault {
+    width: 160/1920 * 100vw !important;
+    height: 160/1920 * 100vw !important;
+    p {
+      font-size: 30/1920 * 100vw !important;
+    }
+  }
+  .modalBar {
+    display: none;
+  }
+  .clickObject {
+    //width: 1000/1920 * 100vw !important;
+    height: 2000/1920 * 100vw !important;
+  }
+  .modalToolBarNew {
+    display: none;
+  }
+  .modalInterfaceDirLocate {
+    font-size: 30/1920 * 100vw;
+  }
+  .imgCircle {
+    width: 400/1920 * 100vw !important;
+    height: 400/1920 * 100vw !important;
+  }
+  .loginInput {
+    height: 100/1920 * 100vw !important;
+    width: 200/1920 * 100vw !important;
+    font-size: 56/1920 * 100vw !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .iconDefault {
+    width: 320/1920 * 100vw !important;
+    height: 320/1920 * 100vw !important;
+    p {
+      font-size: 60/1920 * 100vw !important;
+    }
+  }
+  .modalBar {
+    display: none;
+  }
+  .modalToolBarNew {
+    display: none;
+  }
+  .modalInterfaceDirLocate {
+    font-size: 60/1920 * 100vw !important;
+  }
+  .imgCircle {
+    width: 600/1920 * 100vw !important;
+    height: 600/1920 * 100vw !important;
+  }
+  .loginInput {
+    height: 150/1920 * 100vw !important;
+    width: 300/1920 * 100vw !important;
+    font-size: 84/1920 * 100vw !important;
+  }
 }
